@@ -18,10 +18,24 @@ function LoadCountries(){
   },[])
   return (
     <div>
-      <h3>Visiting every country of the world</h3>
-      <p>Available countries: {countries.length}</p>
+      <h1>Visiting every country of the world</h1>
+      <h3>Available countries: {countries.length}</h3>
+      {
+        countries.map(country => <Country name={country.name.common} continents={country.continents} capital={country.capital}></Country>)
+      }
     </div>
   )
 }
 
+function Country(props){
+  return(
+    <div className='container'>
+      <h2>Continents: {props.continents
+}
+</h2>
+      <h3>Country: {props.name}</h3>
+     <h4>Capital: {props.capital}</h4> 
+    </div>
+  )
+}
 export default App;
