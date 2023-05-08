@@ -37,8 +37,23 @@
   }
 }
 
+.country-container{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 5px;
+}
 .container{
-  border: 2px solid greenyellow;
-  margin: 20px;
+  border: 2px solid rgb(235, 235, 149);
+  margin: 20px 10px;
   border-radius: 10px;
+  background-color: lightgoldenrodyellow;
+  /* padding: 10px; */
+}
+
+.container img{
+  width: 150px;
+}
+nav a{
+  text-decoration: none;
+  margin-right: 10px;
 }
